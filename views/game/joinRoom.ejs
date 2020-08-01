@@ -16,6 +16,10 @@
     <script>
         $("#Go").click(() => {
             if ($("#usr")[0].value == "") return;
+            if(window.localStorage.getItem('isFirstGOCheckMate')=="1")
+            {
+                
+            }
             window.location.href = '/checkmate/room/' + $("#usr")[0].value;
         })
     </script>
